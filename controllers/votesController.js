@@ -1,7 +1,7 @@
 const express = require('express')
 const db = require('../config/database')
 const Vote = require('../models/Vote')
-const Candidate = require('../models/Canditate')
+const Candidate = require('../models/Canditate.js')
 class votesController {
     static setVote = async (req, res) =>{
         // TO DO: add a vote to candidate, verify if cpf is valid

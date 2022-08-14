@@ -1,5 +1,5 @@
 const express = require('express')
-const Candidate = require('../models/Canditate')
+const Candidate = require('../models/Canditate.js')
 class candidatesController {
     static getRanking = async (req, res) =>{
         // return candidates label and their votes
