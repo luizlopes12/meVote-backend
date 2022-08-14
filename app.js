@@ -11,5 +11,7 @@ routes(app)
 app.listen(port, () =>{
     console.log(`Servidor rodando, porta ${port}`)
 })
-
+app.get('/',(req, res) =>{
+    res.send('Backend do sistema')
+})
 // db.connection.sync({force:true})
