@@ -14,6 +14,9 @@ app.use(function(req, res, next) {
 app.use(express.json())
 app.use(cors())
 routes(app)
+app.get('/', (req, res) =>{
+    res.send('Inicio da API meVote.')
+})
 app.listen(port, () =>{
     console.log(`Servidor rodando, porta ${port}`)
 })
