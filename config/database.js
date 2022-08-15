@@ -4,7 +4,7 @@ const connection = new Sequelize("fatecdatabase", "fatecdatabase", "f@t3c@db__1"
   host: "fatecdatabase.mysql.dbaas.com.br",
   dialect: "mysql",
   dialectOptions: {
-    ssl: true,
+    ssl: {},
   },
 });
 
