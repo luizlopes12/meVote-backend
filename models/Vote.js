@@ -1,5 +1,5 @@
-const db = require('../config/database')
-const Candidate = require('./Canditate')
+const db = require('../config/database.js')
+const Candidate = require('/Canditate.js')
 
 const Vote = db.connection.define('votes', {
     CPF: {
