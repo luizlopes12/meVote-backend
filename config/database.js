@@ -3,6 +3,9 @@ const Sequelize = require("sequelize");
 const connection = new Sequelize("fatecdatabase", "fatecdatabase", "f@t3c@db__1", {
   host: "http://fatecdatabase.mysql.dbaas.com.br/",
   dialect: "mysql",
+  dialectOptions: {
+    ssl: true,
+  },
 });
 
 connection
