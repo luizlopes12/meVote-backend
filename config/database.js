@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 //Conexão com o banco de dados mysql
-const connection = new Sequelize("nodeBD", "root", "admin", {
-  host: "localhost",
+const connection = new Sequelize("fatecdatabase", "fatecdatabase", "f@t3c@db__1", {
+  host: "http://fatecdatabase.mysql.dbaas.com.br",
   dialect: "mysql",
 });
 
