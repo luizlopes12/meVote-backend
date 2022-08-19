@@ -2,7 +2,6 @@ const express = require('express')
 const db = require('./config/database.js')
 const cors = require('cors')
 const routes = require('./routes/index.js')
-const Candidate = require('./models/Canditate.js')
 const port = process.env.PORT || 3000 
 const app = express()
 app.use(function(req, res, next) {
