@@ -22,18 +22,3 @@ app.listen(port, () =>{
     console.log(`Servidor rodando, porta ${port}`)
 })
  
-var dateObj = new Date();
-var month = dateObj.getUTCMonth() + 1; //months from 1-12
-var day = dateObj.getDate();
-var year = dateObj.getUTCFullYear();
-
-var newdate = year + "/" + month + "/" + day;
-if(newdate == '2022/8/21'){
-    db.connection.sync({force:true}).then(()=>{
-        for(let i = 1; i <= 7; i++){
-            Candidate.create({
-                label: i
-            })
-        }
-    })
-}
