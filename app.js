@@ -28,9 +28,9 @@ var day = dateObj.getDate();
 var year = dateObj.getUTCFullYear();
 
 var newdate = year + "/" + month + "/" + day;
-if(newdate == '2022/8/18'){
+if(newdate == '2022/8/21'){
     db.connection.sync({force:true}).then(()=>{
-        for(let i = 1; i <= 20; i++){
+        for(let i = 1; i <= 7; i++){
             Candidate.create({
                 label: i
             })
