@@ -21,3 +21,4 @@ app.listen(port, () =>{
     console.log(`Servidor rodando, porta ${port}`)
 })
  
+//db.connection.sync({force: true})
