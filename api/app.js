@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const db = require('./config/database.js')
 const cors = require('cors')
@@ -25,4 +26,4 @@ app.listen(port, () =>{
     console.log(`Servidor rodando, porta ${port}`)
 })
  
-//db.connection.sync({force: true})
+// db.connection.sync({force: true})
