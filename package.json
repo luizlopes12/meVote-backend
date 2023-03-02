@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "nodemon ./api/app.js",
-    "start": "node ./api/app.js"
+    "start": "node ./api/app.js",
+    "vercel-build": "npm install mysql2 --save"
   }
 }
