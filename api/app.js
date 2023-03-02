@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 app.use(express.json())
 app.use(cors(
     {
-        origin: 'https://encontro-cervejeiro.vercel.app',
+        origin: process.env.FRONTEND_URL,
     }
 ))
 routes(app)
