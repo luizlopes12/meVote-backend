@@ -12,7 +12,11 @@ app.use(function(req, res, next) {
     next();
 });
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin: 'https://encontro-cervejeiro.vercel.app',
+    }
+))
 routes(app)
 app.get('/', (req, res) =>{
     res.send('Inicio da API meVote.')
