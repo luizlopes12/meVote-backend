@@ -13,9 +13,8 @@ app.use(function(req, res, next) {
     next();
 });
 app.use(express.json())
-app.use(cors(
-    {
-        origin: process.env.FRONTEND_URL,
+app.use(cors({
+        origin: '*',
     }
 ))
 routes(app)
