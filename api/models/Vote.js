@@ -13,6 +13,7 @@ Vote.belongsTo(Candidate, {
     foreignKey: 'candidateId'
 })
 
+// Vote.sync({})
 
 
 module.exports = Vote

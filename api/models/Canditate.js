@@ -13,7 +13,6 @@ const Candidate = db.connection.define('candidates', {
 
 module.exports = Candidate
 
-
 // Candidate.bulkCreate([
 //     { label: '1' },
 //     { label: '2' },
